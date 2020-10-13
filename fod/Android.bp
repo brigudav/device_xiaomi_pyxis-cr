@@ -19,9 +19,11 @@ cc_binary {
     defaults: ["hidl_defaults"],
     name: "vendor.lineage.biometrics.fingerprint.inscreen@1.1-service.xiaomi_pyxis",
     init_rc: ["vendor.lineage.biometrics.fingerprint.inscreen@1.1-service.xiaomi_pyxis.rc"],
-    "-Wno-sign-compare",
-    "-Wno-unused-function",
-    "-Wno-string-plus-int",
+    cflags: [
+        "-Wno-sign-compare",
+        "-Wno-unused-function",
+        "-Wno-string-plus-int",
+    ],
     srcs: [
 	"service.cpp",
         "FingerprintInscreen.cpp",
