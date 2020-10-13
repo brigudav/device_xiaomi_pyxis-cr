@@ -33,7 +33,7 @@ cc_binary {
         "libhwbinder",
         "libutils",
         "vendor.goodix.hardware.biometrics.fingerprint@2.1",
-        "vendor.lineage.biometrics.fingerprint.inscreen@1.1-service.xiaomi_pyxis",
+        "vendor.lineage.biometrics.fingerprint.inscreen@1.1",
         "vendor.xiaomi.hardware.fingerprintextension@1.0",
     ],
 }
