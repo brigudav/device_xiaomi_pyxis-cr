@@ -23,13 +23,3 @@ cc_library_static {
         "system/core/init"
     ]
 }
-
-cc_library_static {
-    name: "libinit_pyxis.recovery",
-    recovery_available: true,
-    srcs: ["init_pyxis.cpp"],
-    include_dirs: [
-        "system/core/base/include",
-        "system/core/init"
-    ]
-}
