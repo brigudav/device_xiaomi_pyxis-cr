@@ -10,6 +10,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from pyxis device.
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES :=1080
+
 # FaceUnlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
