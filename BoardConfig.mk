@@ -56,6 +56,8 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := proton
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(TARGET_KERNEL_CLANG_VERSION)
+KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(TARGET_KERNEL_CLANG_VERSION)/bin
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
 TARGET_KERNEL_SOURCE := kernel/xiaomi/pyxis
 TARGET_KERNEL_CONFIG := brutal_pyxis_defconfig
 
@@ -177,7 +179,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_xiaomi
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_pyxis
-TARGET_RECOVERY_DEVICE_MODULES := libinit_pyxis
+#TARGET_RECOVERY_DEVICE_MODULES := libinit_pyxis
 
 # RenderScript
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
